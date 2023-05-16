@@ -28,7 +28,7 @@ namespace _08.TennisRanklist
                 }
             }
             Console.WriteLine($"Final points: {allPoints}");
-            Console.WriteLine($"Average points: {(allPoints - initialPoints) / tournamentsParticipation}"); //Celochisleno delenie
+            Console.WriteLine($"Average points: {(allPoints - initialPoints) / tournamentsParticipation}");
             Console.WriteLine($"{(double) tournamentsWon / tournamentsParticipation * 100:F2}%");
         }
     }

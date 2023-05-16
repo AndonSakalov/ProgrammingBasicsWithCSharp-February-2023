@@ -10,21 +10,21 @@ namespace _07.HousePainting
             double y = double.Parse(Console.ReadLine());
             double h = double.Parse(Console.ReadLine());
             //vrata i prozorec
-            double vrata = 1.2 * 2;
-            double prozorec = 1.5 * 1.5;
+            double door = 1.2 * 2;
+            double window = 1.5 * 1.5;
             //stenite
-            double zadnaStena = x * x;
-            double prednaStena = zadnaStena - vrata;
-            double stranichnaStena1 = x * y - prozorec;
-            double stranichnaStena2 = stranichnaStena1;
+            double backWall = x * x;
+            double frontWall = backWall - door;
+            double sideWall1 = x * y - window;
+            double sideWall2 = sideWall1;
             //dolna chast na kushtata
-            double dolnaChastNaKushtata = zadnaStena + prednaStena + stranichnaStena1 + stranichnaStena2;
+            double lowerPartOfTheHouse = backWall + frontWall + sideWall1 + sideWall2;
 
-            double golqmaChastNaPokriva = (x * y) * 2;
-            double triugulnaChastNaPokriva = ((x * h) / 2.00) * 2;
-            double roof = golqmaChastNaPokriva + triugulnaChastNaPokriva;
+            double biggerPartOfTheRoof = (x * y) * 2;
+            double trianglePartOfTheRoof = ((x * h) / 2.00) * 2;
+            double roof = biggerPartOfTheRoof + trianglePartOfTheRoof;
 
-            double greenPaintQuantityInLiters = dolnaChastNaKushtata / 3.4;
+            double greenPaintQuantityInLiters = lowerPartOfTheHouse / 3.4;
             double redPaintQuantityInLiters = roof / 4.3;
 
             Console.WriteLine($"{greenPaintQuantityInLiters:f2}");

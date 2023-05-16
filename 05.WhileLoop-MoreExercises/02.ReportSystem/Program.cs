@@ -25,7 +25,7 @@ namespace _02.ReportSystem
                     int itemCost = int.Parse(input);
                     if (n % 2 != 0) //Cash
                     {
-                        if (itemCost > 100) //idk here
+                        if (itemCost > 100) 
                         {
                             Console.WriteLine("Error in transaction!");
                         }

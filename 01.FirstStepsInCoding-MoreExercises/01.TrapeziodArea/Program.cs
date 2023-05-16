@@ -6,7 +6,7 @@ namespace _01.TrapeziodArea
     {
         static void Main(string[] args)
         {
-            //Lice na trapec
+            //Area of a trapezius
             double b1 = double.Parse(Console.ReadLine());
             double b2 = double.Parse(Console.ReadLine());
             double h = double.Parse(Console.ReadLine());

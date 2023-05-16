@@ -7,17 +7,16 @@ namespace _08.Graduation
         static void Main(string[] args)
         {
             string name = Console.ReadLine();
-           // double grades = double.Parse(Console.ReadLine());
             int grade = 1;
-            int badgrades = 0;
+            int badGrades = 0;
             double allGrades = 0;
             while (grade <= 12)
             {
                 double grades = double.Parse(Console.ReadLine());
                 if (grades < 4.00) 
                 {
-                    badgrades++;
-                    if (badgrades > 1)
+                    badGrades++;
+                    if (badGrades > 1)
                     {
                         Console.WriteLine($"{name} has been excluded at {grade} grade");
                         return;

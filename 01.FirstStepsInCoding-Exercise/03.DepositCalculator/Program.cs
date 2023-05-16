@@ -12,7 +12,7 @@ namespace _03.DepositCalculator
 
             double sum = depositSum + monthsOfDeposit * ((depositSum * yearlyInterest * 0.01) / 12);
             Console.WriteLine(sum);
-            //:f2 = x,yy/ :f5 = x,yyyyy 
+            
         }
     }
 }

@@ -8,11 +8,11 @@ namespace _05.TrainingLab
         {
             //shirina na rabotnoto mqsto - 70 cm.
             //duljina na rabotnoto mqsto - 120 cm.
-            double wDuljina = double.Parse(Console.ReadLine());
-            double hShirina = double.Parse(Console.ReadLine());
+            double wLength = double.Parse(Console.ReadLine());
+            double hWidth = double.Parse(Console.ReadLine());
 
-            double wDuljinaCM = wDuljina * 100;
-            double hShirinaCM = hShirina * 100;
+            double wDuljinaCM = wLength * 100;
+            double hShirinaCM = hWidth * 100;
 
             double hShirinaBezKoridora = hShirinaCM - 100;
             double rabotniMestaNaRed = hShirinaBezKoridora / 70; 

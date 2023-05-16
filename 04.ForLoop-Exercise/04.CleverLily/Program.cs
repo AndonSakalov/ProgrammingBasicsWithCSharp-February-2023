@@ -10,7 +10,6 @@ namespace _04.CleverLily
             double washingMachinePrice = double.Parse(Console.ReadLine());
             int toyPrice = int.Parse(Console.ReadLine());
             double savedMoney = 0;
-            double toyMoney = 0;
             int toys = 0;
             for (int i = 1; i <= age; i++)
             {

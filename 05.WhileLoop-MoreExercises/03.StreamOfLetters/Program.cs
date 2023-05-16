@@ -63,7 +63,7 @@ namespace _03.StreamOfLetters
                 if (sign == 3)
                 {
                     sign = 0;
-                    allword += word +" ";  //Important
+                    allword += word +" ";  
                     word = string.Empty;
                     cIsFound = false;
                     oIsFound = false;

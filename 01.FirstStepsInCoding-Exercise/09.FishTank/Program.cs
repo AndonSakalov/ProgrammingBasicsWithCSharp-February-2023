@@ -13,8 +13,7 @@ namespace _09.FishTank
 
             double volume = aqariumLength * aquariumWidth * aquariumHeigth;
             double volumeInLiters = volume * 0.001;
-            double litersNeeded = volumeInLiters * (1 - (percentigeSpaceTaken * 0.01)); //litrite, koito sa ni nujni da napulnim akvariuma = obema v litri * (obema v litri - zaetiqt obem.
-              //NB a * (1 - (c*0,01) ) = (a * 1) - (a * zaetiqt obem) = a - zaetiqt obem
+            double litersNeeded = volumeInLiters * (1 - (percentigeSpaceTaken * 0.01)); 
 
             Console.WriteLine(litersNeeded);
         }
