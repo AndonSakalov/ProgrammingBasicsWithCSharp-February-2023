@@ -6,30 +6,29 @@ namespace _05.TrainingLab
     {
         static void Main(string[] args)
         {
-            //shirina na rabotnoto mqsto - 70 cm.
-            //duljina na rabotnoto mqsto - 120 cm.
+           
             double wLength = double.Parse(Console.ReadLine());
             double hWidth = double.Parse(Console.ReadLine());
 
-            double wDuljinaCM = wLength * 100;
-            double hShirinaCM = hWidth * 100;
+            double wLengthCM = wLength * 100;
+            double hWidthCM = hWidth * 100;
 
-            double hShirinaBezKoridora = hShirinaCM - 100;
-            double rabotniMestaNaRed = hShirinaBezKoridora / 70; 
+            double hWidthWithoutTheCoridoor = hWidthCM - 100;
+            double workPlacesPerRol = hWidthWithoutTheCoridoor / 70; 
 
-            double redove = wDuljinaCM / 120;
+            double rols = wLengthCM / 120;
 
             //A way to convert double into int. By converting redove and rabotniMestaNaRed from double to int, the calculations are now with whole numbers and are correct!
             int b = 0;
-            b = (int)redove;
+            b = (int)rols;
 
             int c = 0;
-            c = (int)rabotniMestaNaRed;
+            c = (int)workPlacesPerRol;
             //A way to convert double into int. By converting redove and rabotniMestaNaRed from double to int, the calculations are now with whole numbers and are correct!
             
-            int broiRabotniMesta = (b * c - 3);
+            int countOfWorkPlaces = (b * c - 3);
 
-            Console.WriteLine(broiRabotniMesta);
+            Console.WriteLine(countOfWorkPlaces);
         }
     }
 }
